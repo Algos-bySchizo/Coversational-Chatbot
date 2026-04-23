@@ -1,1 +1,4 @@
 .env 
+convo_history.js
+__pycache__
+venv
