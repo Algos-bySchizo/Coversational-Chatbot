@@ -20,10 +20,8 @@ def record_audio(sample_rate = 44100):
             raise sd.CallbackStop
         
     with sd.InputStream(samplerate=sample_rate, channels=1, dtype="int16" ,callback=callback):
-        
-        input()
-        
-        stop_event.set()
+            input()
+            stop_event.set()
 
     audio = np.concatenate(frames, axis = 0)
 
