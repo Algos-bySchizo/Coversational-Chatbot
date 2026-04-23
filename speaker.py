@@ -1,24 +1,3 @@
-# import io
-# from gtts import gTTS
-# from pydub import AudioSegment
-# from pydub.playback import play
-
-# def speak(text, speed=1.3): 
-    
-#     tts = gTTS(text=text, lang="en", slow=False)
-
-#     mp3_buffer = io.BytesIO()
-
-#     tts.write_to_fp(mp3_buffer)
-
-#     mp3_buffer.seek(0)
-
-#     audio = AudioSegment.from_mp3(mp3_buffer)
-
-#     faster_audio = audio.speedup(playback_speed=speed)
-
-#     play(faster_audio)
-
 from gtts import gTTS
 import os
 
